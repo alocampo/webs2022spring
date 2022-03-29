@@ -1,1 +1,3 @@
-kdsfjblksdfjn filler this is my website
+To access my website, start at ~/docs/index.html and everything else should be accessible from there.
+
+In lieu of my about page writing, you should know that this website's goal is to document my life and how I've changed over the years. I think of it like a scrapbook more than anything. My website is still very much a work in progress. My main concerns are the layout/positioning of each piece of content in the website. Is it easy to navigate, and does your eye follow down the page in a natural way? Alongside the actual write-ups for image descriptions and the about page, my next main goal is to make the website actually look nice.
