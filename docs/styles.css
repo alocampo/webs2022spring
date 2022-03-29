@@ -19,10 +19,11 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 1.5em;
+  flex-wrap: wrap;
 }
 
 .home-menu-container {
@@ -48,18 +49,14 @@ body {
   background-color: transparent;
 }
 
-.prose-title {
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-items: center;
-}
-
 p{
 	margin-bottom: 1em;
 	line-height: 1.2;
 }
-h1 + p {
-	width: 1000px;
+@media only screen and (min-width: 1000px) {
+	h1 + p {
+		width: 1000px;
+	}
 }
 .preview-description p:first-of-type,
 .prose p:first-of-type{
@@ -115,27 +112,31 @@ h3{
   font-family: "Times New Roman", Garamond, Serif;
   background-color: #ffc389;
 }
+@media only screen and (max-width: 1000px) {
+  .main-content-container{
+    flex-wrap: wrap;
+  }
+}
 
 .individual-page {
   flex-direction: row;
 }
 
 .prose {
+	display: flex;
 	flex-direction: column;
 	padding: 5px;
-	margin: 15px;
-	width: 1000px;
 	margin: 10px;
 	border: 2px solid #5D6063;
-	  background-color: #f0e8de;
+	background-color: #f0e8de;
+	flex-wrap: wrap;
 }
-.right-side .prose {
-  width: 800px;
+@media only screen and (min-width: 1000px) {
+  .main-content-container > .prose {
+	width: 1000px;
+  }
 }
 
-.picture-bundle + .prose {
-	width: 700px;
-}
 
 .preview-container{
 	display: flex;
@@ -148,17 +149,27 @@ h3{
 	  background-color: #f0e8de;
 }
 
+
 .preview-description{
 	margin: 15px;
 }
 
 .picture-bundle{
+	display: flex;
+	flex-direction: row;
 	background-color: #6260ad;
 	padding: 15px;
 }
+@media only screen and (max-width: 1000px) {
+  .picture-bundle {
+    flex-wrap: wrap;
+  }
+}
 
 img{
+	margin: 2px;
 	margin-bottom: -4px;
+	align-self: end;
 }
 
 .qotd-scan{
