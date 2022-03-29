@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   color: #351639;
+  background-color: transparent;
+}
+
+body {
   background-color: #f0e8de;
 }
 
@@ -123,6 +127,10 @@ h3{
 	width: 1000px;
 	margin: 10px;
 	border: 2px solid #5D6063;
+	  background-color: #f0e8de;
+}
+.right-side .prose {
+  width: 800px;
 }
 
 .picture-bundle + .prose {
@@ -137,6 +145,7 @@ h3{
 	padding: 5px;
 	margin: 15px;
 	width: 1000px;
+	  background-color: #f0e8de;
 }
 
 .preview-description{
@@ -154,4 +163,15 @@ img{
 
 .qotd-scan{
 	margin-bottom: 0.5px;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait-buttons{
+	  display: flex;
+  flex-direction: row;
+	background-color: transparent;
 }
